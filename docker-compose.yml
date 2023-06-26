@@ -1,6 +1,13 @@
 ---
-version: '2'
+version: '3'
 services:
+
+  redis-forum-api:
+    image: redis
+    container_name: redis-poc-api
+    restart: unless-stopped
+    expose:
+      - 6379
 
   broker:
     image: confluentinc/cp-kafka:7.4.0
