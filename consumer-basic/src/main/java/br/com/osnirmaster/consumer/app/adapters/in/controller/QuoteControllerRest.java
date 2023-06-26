@@ -25,8 +25,7 @@ public class QuoteControllerRest {
 
         Quote quote = getQuoteCalculation.insuranceQuote(request.convertTo());
         URI uri = uriBuilder.path("/quote/{id}").buildAndExpand(quote.getQuoteId()).toUri();
+
         return ResponseEntity.created(uri).body(uri);
-
     }
-
 }

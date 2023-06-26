@@ -41,11 +41,10 @@ public class GetQuoteCalculation {
             quote.setCoverTax(coverTax.getCoverTax(quote.getproductCode()));
             quote.setQuoteId(UUID.randomUUID().toString());
             quote.sendContractForCaculation(commandBroker);
+
             log.info("Object Mapping {}", quote );
             log.info("in Storing...");
         }
-
-
         return quoteRepository.save(quote);
     }
 }
