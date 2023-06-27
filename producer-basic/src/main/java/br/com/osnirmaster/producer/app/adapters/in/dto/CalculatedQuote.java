@@ -1,6 +1,7 @@
 package br.com.osnirmaster.producer.app.adapters.in.dto;
 
-import br.com.insurance.market.domain.Parcel;
+
+import br.com.osnirmaster.producer.app.domain.Parcel;
 
 import java.util.List;
 
