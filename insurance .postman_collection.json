@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "95a1cc4f-546e-4048-8d33-e7a7f20319f1",
+		"name": "Local Insurance ",
+		"description": "Projeto de referencia para utilizacao em projetos de corretora de  seguros",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2482731"
+	},
+	"item": [
+		{
+			"name": "market",
+			"item": [
+				{
+					"name": "create quote",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productCode\":\"PREST-001\",\r\n    \"birthdate\":\"1988-12-08\",\r\n    \"customerId\":\"123123\",\r\n    \"segmentCustomerCode\":\"person\",\r\n    \"contracts\":[\r\n        {\r\n            \"creditAgreementId\":\"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"2\",\r\n            \"creditPriceTotal\":\"100.00\",\r\n            \"creditPriceParcel\":\"10.00\"\r\n        },\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        },\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8099/insurance/quote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"insurance",
+								"quote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mobile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productCode\":\"PREST-001\",\r\n    \"birthdate\":\"1988-12-08\",\r\n    \"customerId\":\"123123\",\r\n    \"segmentCustomerCode\":\"person\",\r\n    \"contracts\":[\r\n        {\r\n            \"creditAgreementId\":\"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"2\",\r\n            \"creditPriceTotal\":\"100.00\",\r\n            \"creditPriceParcel\":\"10.00\"\r\n        },\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        },\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8096/command",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"command"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "load balancer nginx",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productCode\":\"PREST-001\",\r\n    \"birthdate\":\"1988-12-08\",\r\n    \"customerId\":\"123123\",\r\n    \"segmentCustomerCode\":\"person\",\r\n    \"contracts\":[\r\n        {\r\n            \"creditAgreementId\":\"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"70\",\r\n            \"creditPriceTotal\":\"100.00\",\r\n            \"creditPriceParcel\":\"10.00\"\r\n        },\r\n                {\r\n            \"creditAgreementId\":\"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"70\",\r\n            \"creditPriceTotal\":\"100.00\",\r\n            \"creditPriceParcel\":\"10.00\"\r\n        },\r\n                {\r\n            \"creditAgreementId\":\"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"70\",\r\n            \"creditPriceTotal\":\"100.00\",\r\n            \"creditPriceParcel\":\"10.00\"\r\n        },\r\n                {\r\n            \"creditAgreementId\":\"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"70\",\r\n            \"creditPriceTotal\":\"100.00\",\r\n            \"creditPriceParcel\":\"10.00\"\r\n        },\r\n                {\r\n            \"creditAgreementId\":\"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"70\",\r\n            \"creditPriceTotal\":\"100.00\",\r\n            \"creditPriceParcel\":\"10.00\"\r\n        },\r\n                {\r\n            \"creditAgreementId\":\"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"70\",\r\n            \"creditPriceTotal\":\"100.00\",\r\n            \"creditPriceParcel\":\"10.00\"\r\n        },\r\n                {\r\n            \"creditAgreementId\":\"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"70\",\r\n            \"creditPriceTotal\":\"100.00\",\r\n            \"creditPriceParcel\":\"10.00\"\r\n        },\r\n                {\r\n            \"creditAgreementId\":\"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"70\",\r\n            \"creditPriceTotal\":\"100.00\",\r\n            \"creditPriceParcel\":\"10.00\"\r\n        },\r\n                {\r\n            \"creditAgreementId\":\"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"70\",\r\n            \"creditPriceTotal\":\"100.00\",\r\n            \"creditPriceParcel\":\"10.00\"\r\n        },\r\n                {\r\n            \"creditAgreementId\":\"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"70\",\r\n            \"creditPriceTotal\":\"100.00\",\r\n            \"creditPriceParcel\":\"10.00\"\r\n        }\r\n        \r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/command",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"command"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create quote reactive",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productCode\":\"PREST-001\",\r\n    \"birthdate\":\"1988-12-08\",\r\n    \"customerId\":\"123123\",\r\n    \"segmentCustomerCode\":\"person\",\r\n    \"creditContracts\":[\r\n        {\r\n            \"creditAgreementId\":\"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"2\",\r\n            \"creditPriceTotal\":\"100.00\",\r\n            \"creditPriceParcel\":\"10.00\"\r\n        },\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"70\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n        ,\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8098/offer/customer/{{$guid}}/quote/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8098",
+							"path": [
+								"offer",
+								"customer",
+								"{{$guid}}",
+								"quote",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nginx reactive",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productCode\":\"PREST-001\",\r\n    \"birthdate\":\"1988-12-08\",\r\n    \"customerId\":\"123123\",\r\n    \"segmentCustomerCode\":\"person\",\r\n    \"creditContracts\":[\r\n        {\r\n            \"creditAgreementId\":\"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"2\",\r\n            \"creditPriceTotal\":\"100.00\",\r\n            \"creditPriceParcel\":\"10.00\"\r\n        },\r\n        {\r\n            \"creditAgreementId\": \"{{$guid}}\",\r\n            \"productCreditCode\":\"CRED-001\",\r\n            \"creditParcelAmount\":\"10\",\r\n            \"creditPriceTotal\":\"500.00\",\r\n            \"creditPriceParcel\":\"50.00\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/offer/customer/{{$guid}}/quote/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"offer",
+								"customer",
+								"{{$guid}}",
+								"quote",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get quote",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerId\": \"1111\",\n    \"quoteId\": \"2222\",\n    \"productCode\": \"aaaa\",\n    \"creditContractParcel\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5002/insurance/quote/7dd7f10f-0087-473f-922c-25a57c64f776/customer/123123?contracts=31",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5002",
+							"path": [
+								"insurance",
+								"quote",
+								"7dd7f10f-0087-473f-922c-25a57c64f776",
+								"customer",
+								"123123"
+							],
+							"query": [
+								{
+									"key": "contracts",
+									"value": "31"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WebSocket Ofertas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://bandclub.com.br/api/test/dog/glacuiane",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsIm5iZiI6MTYxODc5MTEzOCwicm9sZXMiOlsiVFJJIiwiSFNJIl0sImlzcyI6ImF1dGgtc2VydmljZSIsImF2YXRhciI6InN0YXRpY1wvYXZhdGFyc1wvYWRtaW4ucG5nIiwiZXhwIjoxNjE4ODc3NTM4LCJpYXQiOjE2MTg3OTExMzh9.BUb0jG2tkpVlE__qr5mlHCO92uNlcH-5x04Gi_LdEvw",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://bandclub.com.br/api/test/dog/glacuiane",
+					"protocol": "http",
+					"host": [
+						"bandclub",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"test",
+						"dog",
+						"glacuiane"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"metaData\":{\n            \"groupName\": \"Pessoas Individual\",\n            \"branchName\": \"Vida\",\n            \"productName\": \"Seguro Vida Local\",\n            \"partnerName\": \"Insurance Lab\"\n    },\n    \"code\":\"PESVIDINS\",\n    \"name\": \"Seguros Vida Local\",\n    \"image\": \"/images.jpeg\",\n    \"description\": \"aaaaaaaaaaaa\",\n    \"covers\": [],\n    \"questions\": [],\n    \"maxNumberOfInsured\": \"3\",\n    \"icon\": \"/icon.png\",\n    \"categoryId\": \"4511ca8b-0bc7-430f-b894-a7ec1036f322\",\n    \"validatyFrom\": \"2021-01-01\",\n    \"validatyUntil\": \"2021-01-12\",\n    \"version\":{\n        \"versionNumber\": \"1\",\n        \"changeAt\": \"2021-01-01\"\n    },\n    \"price\": \"100.00\",\n    \"partnerId\": \"141ba274-cc50-4377-a59c-e080066f375e\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ENDPOINTPRODUCT}}/insurance/product",
+					"host": [
+						"{{ENDPOINTPRODUCT}}"
+					],
+					"path": [
+						"insurance",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add event",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{MARKET}}/event",
+					"host": [
+						"{{MARKET}}"
+					],
+					"path": [
+						"event"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
