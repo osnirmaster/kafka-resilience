@@ -13,7 +13,7 @@ public class CommandCalculationSchemaJson {
     private CreditContract creditContract;
 
 
-    public CommandCalculationSchemaJson(Quote quote){
+    public CommandCalculationSchemaJson(@org.jetbrains.annotations.NotNull Quote quote){
         this.customerId = quote.getCustomerId();
         this.quoteId = quote.getQuoteId();
         this.productCode = quote.getproductCode();
